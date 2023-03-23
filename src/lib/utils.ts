@@ -1,13 +1,17 @@
-type Config = {delay: number, times: number}
+type Config = { delay: number, times: number }
 
-export function repeat({delay, times}: Config, fn: () => void) {
-    function runAndReschedule(n: number) {
-        fn()
-        
-        if (n < times) {
-            setTimeout(() => runAndReschedule(n + 1), delay)
-        }
-    }
+export function repeat({ delay, times }: Config, fn: () => void) {
+    return new Promise<void>((resolve, reject) => {
+        function runAndReschedule(n: number) {
+            fn()
     
-    setTimeout(() => runAndReschedule(1), delay)   
+            if (n < times) {
+                setTimeout(() => runAndReschedule(n + 1), delay)
+            } else {
+                resolve()
+            }
+        }
+
+        setTimeout(() => runAndReschedule(1), delay)
+    })
 }

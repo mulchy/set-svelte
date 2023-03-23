@@ -11,6 +11,6 @@
     <Intro />
   {:else}
     <Game />
-    <Controls />
+    <!-- <Controls /> -->
   {/if}
 </main>

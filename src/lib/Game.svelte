@@ -1,7 +1,7 @@
 <script lang="ts">
     import { fly } from "svelte/transition";
     import Card from "./Card.svelte";
-    import { isSet } from "./set";
+    import { findSet, isSet } from "./set";
     import { repeat } from "./utils";
     import {
         gameOver,
@@ -30,12 +30,14 @@
     <div>
         <h1>Sets Found: {$state.count}</h1>
     </div>
+
     <div>
         <h1>
-            <img src={deckLogo} alt="Deck Logo" width="32px" height="32px">{$state.deck.length}
+            <img src={deckLogo} alt="Deck Logo" width="32px" height="32px" on:click={() => deal(1, state)}>{$state.deck.length}
         </h1>
     </div>
 </header>
+
 <div class="board">
     {#each $state.visible as card (card)}
         <div transition:fly|local={{ y: 100 }}>
@@ -56,15 +58,19 @@
                 1000} seconds!
         </h1>
     {/if}
+
 </div>
 
+
+
+        
 <style>
     .board {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: repeat(7, 180px);
         grid-gap: 10px;
-        height: 100vh;
+        height: calc(100vh - 100px);
         /* padding: 100px calc(100px + 15vw) 100px 100px; */
         box-sizing: border-box;
     }
@@ -74,6 +80,7 @@
     } */
 
     header {
+        min-height: 100px;
         display: flex;
         align-items: center;
         justify-content: space-between;

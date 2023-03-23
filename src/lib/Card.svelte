@@ -6,7 +6,6 @@
     import type { Color, Fill, NumberType, Shape } from "./types";
     import { createEventDispatcher } from "svelte";
     import { flip } from "svelte/animate";
-    import deckLogo from '../assets/deck.svg';
     const dispatch = createEventDispatcher();
 
     export let number: NumberType;
@@ -42,7 +41,7 @@
 <style>
     .card {
         border: 2px solid black;
-        box-shadow: 10px 10px 5px 1px grey;
+        box-shadow: 5px 5px 3px 1px grey;
         height: 180px;
         width: 110px;
         /* height: 100%;
