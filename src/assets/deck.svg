@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+    viewBox="0 0 100 100">
+    <defs>
+        <mask id="m1">
+            <rect width="100" height="100" fill="white"></rect>
+            <rect x="25" y="2" rx="15" width="50" fill="black" stroke="black" height="80"></rect>
+        </mask>
+
+        <mask id="m2">
+            <rect width="100" height="100" fill="white"></rect>
+            <rect x="25" y="2" rx="15" width="50" fill="black" stroke="black" height="80"></rect>
+            <rect x="25" y="2" rx="15" width="50" fill="black" stroke="black" height="80" transform="translate(-5,5)"></rect>
+        </mask>
+
+        <mask id="m3">
+            <rect width="100" height="100" fill="white"></rect>
+            <rect x="25" y="2" rx="15" width="50" height="80" fill="black" stroke="black" transform="translate(-10,10)"></rect>
+            <rect x="25" y="2" rx="15" width="50" height="80" fill="black" stroke="black" transform="translate(-5,5)"></rect>
+            <rect x="25" y="2" rx="15" width="50" fill="black" stroke="black" height="80"></rect>
+        </mask>
+    </defs>
+
+    <rect id="card1" x="10" y="17" rx="15" width="50" height="80" fill="none" stroke="black" mask="url(#m3)"> </rect>
+    <rect id="card2" x="15" y="12" rx="15" width="50" height="80" fill="none" stroke="black" mask="url(#m2)"> </rect>
+    <rect id="card3" x="20" y="7" rx="15" width="50" height="80" fill="none" stroke="black" mask="url(#m1)"> </rect>
+    <rect id="card4" x="25" y="2" rx="15" width="50" fill="none" stroke="black" height="80"></rect>
+</svg>

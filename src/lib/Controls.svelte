@@ -23,10 +23,11 @@
 <style>
     .sidebar {
         position: fixed;
-        top: 0;
-        right: 0;
-        width: 15vw;
-        height: 100%;
+        /* top: 0;
+        right: 0;  todo media*/
+        /* width: 15vw;
+        height: 100%; */
+        
         background-color: lavender;
         padding: 1em;
         box-sizing: border-box;

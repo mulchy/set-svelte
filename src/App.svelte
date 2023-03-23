@@ -9,7 +9,6 @@
 <main>
   {#if !$state.start}
     <Intro />
-    
   {:else}
     <Game />
     <Controls />

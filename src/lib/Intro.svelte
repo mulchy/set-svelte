@@ -54,12 +54,18 @@
     .cards {
         width: 100%;
         display: flex;
+        flex-direction: column;
         justify-content: space-around;
         margin: 1em 0;
+        align-items: center;
+    }
+
+    :global(.cards .card) {
+        transform: rotate(90deg);
     }
 
     .container {
-        max-width: 50vw;
+        /* max-width: 50vw; todo media*/
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -73,8 +79,9 @@
 
     ul {
         margin: 0;
-        columns: 2;
+        /* columns: 2; todo media */
         list-style-position: inside;
+        padding-left: 0;
     }
 
     h1 {
@@ -82,6 +89,10 @@
     }
 
     p {
-        margin-bottom: 0;
+        /* margin-bottom: 0; todo media */
+    }
+
+    em {
+        font-weight: bold;
     }
 </style>
