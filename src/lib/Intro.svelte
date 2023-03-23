@@ -37,7 +37,7 @@
 
 <style>
     .cards {
-        width: 50%;
+        width: 100%;
         display: flex;
         justify-content: space-around;
         margin: 2em 0;
