@@ -5,5 +5,5 @@
   export let color: Color;
 </script>
 
-<rect rx="30" height="50" width="100" y="0" x="0" stroke={color} {fill} />
+<rect rx="30" height="48" width="98" y="1" x="1" stroke={color} {fill} />
 

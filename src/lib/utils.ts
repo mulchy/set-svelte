@@ -9,5 +9,5 @@ export function repeat({delay, times}: Config, fn: () => void) {
         }
     }
     
-    setTimeout(() => runAndReschedule(0), delay)   
+    setTimeout(() => runAndReschedule(1), delay)   
 }

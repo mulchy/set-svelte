@@ -47,11 +47,13 @@
 </div>
 
 <style>
-    div.card {
+    .card {
         border: 2px solid black;
         box-shadow: 10px 10px 5px 1px grey;
-        height: 100%;
-        width: 100%;
+        height: 200px;
+        width: 180px;
+        /* height: 100%;
+        width: 100%; */
         padding: 2em;
         border-radius: 10px;
         box-sizing: border-box;
@@ -61,7 +63,7 @@
         align-items: center;
     }
 
-    div.card.selected {
+    .card.selected {
         background-color: aliceblue;
     }
 </style>
