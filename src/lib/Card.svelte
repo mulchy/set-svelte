@@ -50,7 +50,7 @@
     .card {
         border: 2px solid black;
         box-shadow: 10px 10px 5px 1px grey;
-        height: 200px;
+        height: 230px;
         width: 180px;
         /* height: 100%;
         width: 100%; */

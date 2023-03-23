@@ -6,9 +6,9 @@
 <div class="container">
     <h1>How to play <a href="https://en.wikipedia.org/wiki/Set_(card_game)">set</a></h1>
 
-    <p>Set is a matching card game. The goal is to identify a set as quickly as possible. Each card has 4 features: </p>
+    <p>Set is a card matching game. The goal is to identify a matching set as quickly as possible. Each card has 4 features: </p>
     <ul>
-        <li>Color (red, green, purple)</li>
+        <li>Color (<span style="color:red">red</span>, <span style="color:green">green</span>, <span style="color:purple">purple</span>)</li>
         <li>Shape (round, diamond, squiggle)</li>
         <li>Fill (empty, dashed, solid)</li>
         <li>Number (1,2,3)</li>
@@ -26,9 +26,9 @@
 
     <p>These three cards <em>do not</em> form a set since two of colors are green, but the third color is purple.</p>
     <div class="cards">
-        <Card color="green" shape="squiggle" fill="empty" number={1} />
-        <Card color="green" shape="squiggle" fill="dashed" number={1} />
-        <Card color="purple" shape="squiggle" fill="solid" number={1} />
+        <Card color="green" shape="squiggle" fill="empty" number={2} />
+        <Card color="green" shape="squiggle" fill="dashed" number={2} />
+        <Card color="purple" shape="squiggle" fill="solid" number={2} />
     </div>
 
 
@@ -40,7 +40,7 @@
         width: 100%;
         display: flex;
         justify-content: space-around;
-        margin: 2em 0;
+        margin: 1em 0;
     }
 
     .container {
@@ -52,10 +52,22 @@
     }
 
     button {
-        margin-top: 3em;
+        margin-top: 1em;
+        margin-bottom: 3em;
     }
 
     ul {
         margin: 0;
+        columns: 2;
+        list-style-position: inside;
     }
+
+    h1 {
+        margin-bottom: 0;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
 </style>

@@ -28,7 +28,7 @@
         width: 15vw;
         height: 100%;
         background-color: lavender;
-        padding: 4em;
+        padding: 1em;
         box-sizing: border-box;
     }
 </style>
